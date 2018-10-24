@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.19.1">
     <title>Erlang Interop – timex v3.4.1</title>
-    <link rel="stylesheet" href="dist/html-4f6aa19597cd1982c84e.css" />
-    <script src="dist/sidebar_items-b670025c07.js"></script>
+    <link rel="stylesheet" href="dist/html-31a11ba8d67816a5bb76.css" />
+    <script src="dist/sidebar_items-cd5b3d0b77.js"></script>
     
   </head>
   <body data-type="extras">
@@ -79,14 +79,14 @@ timex      </h1>
 
 </span><span class="c1"># Our input datetime</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="n">date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">:calendar</span><span class="o">.</span><span class="n">universal_time</span><span class="w">
-</span><span class="p" data-group-id="3480303529-1">{</span><span class="p" data-group-id="3480303529-2">{</span><span class="mi">2015</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">24</span><span class="p" data-group-id="3480303529-2">}</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3480303529-3">{</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">59</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p" data-group-id="3480303529-3">}</span><span class="p" data-group-id="3480303529-1">}</span><span class="w">
+</span><span class="p" data-group-id="5692752239-1">{</span><span class="p" data-group-id="5692752239-2">{</span><span class="mi">2015</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">24</span><span class="p" data-group-id="5692752239-2">}</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5692752239-3">{</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">59</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p" data-group-id="5692752239-3">}</span><span class="p" data-group-id="5692752239-1">}</span><span class="w">
 
 </span><span class="c1"># Conversions to various Elixir types</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">to_datetime</span><span class="p" data-group-id="3480303529-4">(</span><span class="n">date</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Etc/UTC&quot;</span><span class="p" data-group-id="3480303529-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">to_datetime</span><span class="p" data-group-id="5692752239-4">(</span><span class="n">date</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Etc/UTC&quot;</span><span class="p" data-group-id="5692752239-4">)</span><span class="w">
 </span><span class="n">...</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">to_naive_datetime</span><span class="p" data-group-id="3480303529-5">(</span><span class="n">date</span><span class="p" data-group-id="3480303529-5">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">to_naive_datetime</span><span class="p" data-group-id="5692752239-5">(</span><span class="n">date</span><span class="p" data-group-id="5692752239-5">)</span><span class="w">
 </span><span class="n">...</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">to_date</span><span class="p" data-group-id="3480303529-6">(</span><span class="n">date</span><span class="p" data-group-id="3480303529-6">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">to_date</span><span class="p" data-group-id="5692752239-6">(</span><span class="n">date</span><span class="p" data-group-id="5692752239-6">)</span><span class="w">
 </span><span class="n">...</span></code></pre>
 <h3 id="converting-from-erlang-timestamp-tuples" class="section-heading">
   <a href="#converting-from-erlang-timestamp-tuples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
@@ -94,7 +94,7 @@ timex      </h1>
 </h3>
 
 <pre><code class="nohighlight makeup elixir"><span class="c1"># The simplest case, converting from a timestamp to a DateTime, using the highest precision</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Duration</span><span class="o">.</span><span class="n">from_erl</span><span class="p" data-group-id="9070000435-1">(</span><span class="ss">:os</span><span class="o">.</span><span class="n">timestamp</span><span class="p" data-group-id="9070000435-2">(</span><span class="p" data-group-id="9070000435-2">)</span><span class="p" data-group-id="9070000435-1">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Duration</span><span class="o">.</span><span class="n">from_erl</span><span class="p" data-group-id="2718261507-1">(</span><span class="ss">:os</span><span class="o">.</span><span class="n">timestamp</span><span class="p" data-group-id="2718261507-2">(</span><span class="p" data-group-id="2718261507-2">)</span><span class="p" data-group-id="2718261507-1">)</span><span class="w">
 </span><span class="c1">#&lt;Duration(P46Y6M24DT23H44M56.846453S)&gt;</span><span class="w">
 
 </span><span class="c1"># Alternatively if you want control over the precision (in this example, we only care about up-to-the-second precision):</span><span class="w">
@@ -108,8 +108,8 @@ timex      </h1>
 <p><a href="Timex.html#to_erl/1"><code class="inline">Timex.to_erl/1</code></a> converts any valid Timex date/datetime to an erlang date or
 datetime tuple.</p>
 <pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Timex</span><span class="o">.</span><span class="n">now</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">to_erl</span><span class="p" data-group-id="7828134342-1">(</span><span class="n">date</span><span class="p" data-group-id="7828134342-1">)</span><span class="w">
-</span><span class="p" data-group-id="7828134342-2">{</span><span class="p" data-group-id="7828134342-3">{</span><span class="mi">2015</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">24</span><span class="p" data-group-id="7828134342-3">}</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7828134342-4">{</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">18</span><span class="p">,</span><span class="w"> </span><span class="mi">33</span><span class="p" data-group-id="7828134342-4">}</span><span class="p" data-group-id="7828134342-2">}</span></code></pre>
+</span><span class="gp unselectable">...&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">to_erl</span><span class="p" data-group-id="4334374062-1">(</span><span class="n">date</span><span class="p" data-group-id="4334374062-1">)</span><span class="w">
+</span><span class="p" data-group-id="4334374062-2">{</span><span class="p" data-group-id="4334374062-3">{</span><span class="mi">2015</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">24</span><span class="p" data-group-id="4334374062-3">}</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4334374062-4">{</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">18</span><span class="p">,</span><span class="w"> </span><span class="mi">33</span><span class="p" data-group-id="4334374062-4">}</span><span class="p" data-group-id="4334374062-2">}</span></code></pre>
       <footer class="footer">
         <p>
           <span class="line">
@@ -126,7 +126,7 @@ datetime tuple.</p>
   </div>
 </section>
 </div>
-  <script src="dist/html-4f6aa19597cd1982c84e.js"></script>
+  <script src="dist/html-31a11ba8d67816a5bb76.js"></script>
   
   </body>
 </html>

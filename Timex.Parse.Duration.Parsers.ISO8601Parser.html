@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.19.1">
     <title>Timex.Parse.Duration.Parsers.ISO8601Parser – timex v3.4.1</title>
-    <link rel="stylesheet" href="dist/html-4f6aa19597cd1982c84e.css" />
-    <script src="dist/sidebar_items-b670025c07.js"></script>
+    <link rel="stylesheet" href="dist/html-31a11ba8d67816a5bb76.css" />
+    <script src="dist/sidebar_items-cd5b3d0b77.js"></script>
     
   </head>
   <body data-type="modules">
@@ -126,24 +126,24 @@ The parse result is wrapped in a :ok/:error tuple.</p>
   Examples
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9501159099-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="p" data-group-id="9501159099-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Elixir.Timex.Parse.Duration.Parsers.ISO8601Parser</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="9501159099-2">(</span><span class="s">&quot;P15Y3M2DT1H14M37.25S&quot;</span><span class="p" data-group-id="9501159099-2">)</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="nc">Timex.Format.Duration.Formatter</span><span class="o">.</span><span class="n">format</span><span class="p" data-group-id="9501159099-3">(</span><span class="n">d</span><span class="p" data-group-id="9501159099-3">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="3465871920-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="p" data-group-id="3465871920-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Elixir.Timex.Parse.Duration.Parsers.ISO8601Parser</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="3465871920-2">(</span><span class="s">&quot;P15Y3M2DT1H14M37.25S&quot;</span><span class="p" data-group-id="3465871920-2">)</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="nc">Timex.Format.Duration.Formatter</span><span class="o">.</span><span class="n">format</span><span class="p" data-group-id="3465871920-3">(</span><span class="n">d</span><span class="p" data-group-id="3465871920-3">)</span><span class="w">
 </span><span class="s">&quot;P15Y3M2DT1H14M37.25S&quot;</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9501159099-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="p" data-group-id="9501159099-4">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Elixir.Timex.Parse.Duration.Parsers.ISO8601Parser</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="9501159099-5">(</span><span class="s">&quot;P15Y3M2D&quot;</span><span class="p" data-group-id="9501159099-5">)</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="nc">Timex.Format.Duration.Formatter</span><span class="o">.</span><span class="n">format</span><span class="p" data-group-id="9501159099-6">(</span><span class="n">d</span><span class="p" data-group-id="9501159099-6">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="3465871920-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="p" data-group-id="3465871920-4">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Elixir.Timex.Parse.Duration.Parsers.ISO8601Parser</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="3465871920-5">(</span><span class="s">&quot;P15Y3M2D&quot;</span><span class="p" data-group-id="3465871920-5">)</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="nc">Timex.Format.Duration.Formatter</span><span class="o">.</span><span class="n">format</span><span class="p" data-group-id="3465871920-6">(</span><span class="n">d</span><span class="p" data-group-id="3465871920-6">)</span><span class="w">
 </span><span class="s">&quot;P15Y3M2D&quot;</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9501159099-7">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="p" data-group-id="9501159099-7">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Elixir.Timex.Parse.Duration.Parsers.ISO8601Parser</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="9501159099-8">(</span><span class="s">&quot;PT3H12M25.001S&quot;</span><span class="p" data-group-id="9501159099-8">)</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="nc">Timex.Format.Duration.Formatter</span><span class="o">.</span><span class="n">format</span><span class="p" data-group-id="9501159099-9">(</span><span class="n">d</span><span class="p" data-group-id="9501159099-9">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="3465871920-7">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="p" data-group-id="3465871920-7">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Elixir.Timex.Parse.Duration.Parsers.ISO8601Parser</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="3465871920-8">(</span><span class="s">&quot;PT3H12M25.001S&quot;</span><span class="p" data-group-id="3465871920-8">)</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="nc">Timex.Format.Duration.Formatter</span><span class="o">.</span><span class="n">format</span><span class="p" data-group-id="3465871920-9">(</span><span class="n">d</span><span class="p" data-group-id="3465871920-9">)</span><span class="w">
 </span><span class="s">&quot;PT3H12M25.001S&quot;</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9501159099-10">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="p" data-group-id="9501159099-10">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Elixir.Timex.Parse.Duration.Parsers.ISO8601Parser</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="9501159099-11">(</span><span class="s">&quot;P2W&quot;</span><span class="p" data-group-id="9501159099-11">)</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="nc">Timex.Format.Duration.Formatter</span><span class="o">.</span><span class="n">format</span><span class="p" data-group-id="9501159099-12">(</span><span class="n">d</span><span class="p" data-group-id="9501159099-12">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="3465871920-10">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="p" data-group-id="3465871920-10">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Elixir.Timex.Parse.Duration.Parsers.ISO8601Parser</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="3465871920-11">(</span><span class="s">&quot;P2W&quot;</span><span class="p" data-group-id="3465871920-11">)</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="nc">Timex.Format.Duration.Formatter</span><span class="o">.</span><span class="n">format</span><span class="p" data-group-id="3465871920-12">(</span><span class="n">d</span><span class="p" data-group-id="3465871920-12">)</span><span class="w">
 </span><span class="s">&quot;P14D&quot;</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Elixir.Timex.Parse.Duration.Parsers.ISO8601Parser</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="9501159099-13">(</span><span class="s">&quot;P15YT3D&quot;</span><span class="p" data-group-id="9501159099-13">)</span><span class="w">
-</span><span class="p" data-group-id="9501159099-14">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;invalid use of date component after time separator&quot;</span><span class="p" data-group-id="9501159099-14">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Elixir.Timex.Parse.Duration.Parsers.ISO8601Parser</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="3465871920-13">(</span><span class="s">&quot;P15YT3D&quot;</span><span class="p" data-group-id="3465871920-13">)</span><span class="w">
+</span><span class="p" data-group-id="3465871920-14">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;invalid use of date component after time separator&quot;</span><span class="p" data-group-id="3465871920-14">}</span></code></pre>
   </section>
 </div>
           </div>
@@ -164,7 +164,7 @@ The parse result is wrapped in a :ok/:error tuple.</p>
   </div>
 </section>
 </div>
-  <script src="dist/html-4f6aa19597cd1982c84e.js"></script>
+  <script src="dist/html-31a11ba8d67816a5bb76.js"></script>
   
   </body>
 </html>

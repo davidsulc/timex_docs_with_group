@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.19.1">
     <title>Timex.Comparable – timex v3.4.1</title>
-    <link rel="stylesheet" href="dist/html-4f6aa19597cd1982c84e.css" />
-    <script src="dist/sidebar_items-b670025c07.js"></script>
+    <link rel="stylesheet" href="dist/html-31a11ba8d67816a5bb76.css" />
+    <script src="dist/sidebar_items-cd5b3d0b77.js"></script>
     
   </head>
   <body data-type="modules">
@@ -345,11 +345,11 @@ perhaps due to a value being passed which is not a valid date/datetime
 <pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="kn">use</span><span class="w"> </span><span class="nc">Timex</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="n">date1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ld">~D[2014-03-04]</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="n">date2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ld">~D[2015-03-04]</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">compare</span><span class="p" data-group-id="9827975306-1">(</span><span class="n">date1</span><span class="p">,</span><span class="w"> </span><span class="n">date2</span><span class="p">,</span><span class="w"> </span><span class="ss">:years</span><span class="p" data-group-id="9827975306-1">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">compare</span><span class="p" data-group-id="6634399093-1">(</span><span class="n">date1</span><span class="p">,</span><span class="w"> </span><span class="n">date2</span><span class="p">,</span><span class="w"> </span><span class="ss">:years</span><span class="p" data-group-id="6634399093-1">)</span><span class="w">
 </span><span class="o">-</span><span class="mi">1</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">compare</span><span class="p" data-group-id="9827975306-2">(</span><span class="n">date2</span><span class="p">,</span><span class="w"> </span><span class="n">date1</span><span class="p">,</span><span class="w"> </span><span class="ss">:years</span><span class="p" data-group-id="9827975306-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">compare</span><span class="p" data-group-id="6634399093-2">(</span><span class="n">date2</span><span class="p">,</span><span class="w"> </span><span class="n">date1</span><span class="p">,</span><span class="w"> </span><span class="ss">:years</span><span class="p" data-group-id="6634399093-2">)</span><span class="w">
 </span><span class="mi">1</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">compare</span><span class="p" data-group-id="9827975306-3">(</span><span class="n">date1</span><span class="p">,</span><span class="w"> </span><span class="n">date1</span><span class="p" data-group-id="9827975306-3">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">compare</span><span class="p" data-group-id="6634399093-3">(</span><span class="n">date1</span><span class="p">,</span><span class="w"> </span><span class="n">date1</span><span class="p" data-group-id="6634399093-3">)</span><span class="w">
 </span><span class="mi">0</span></code></pre>
   </section>
 </div>
@@ -407,17 +407,17 @@ behavior mirrors <a href="Timex.html#shift/2"><code class="inline">Timex.shift/2
 <pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="kn">use</span><span class="w"> </span><span class="nc">Timex</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="n">date1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ld">~D[2015-01-28]</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="n">date2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ld">~D[2015-02-28]</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">diff</span><span class="p" data-group-id="2235840685-1">(</span><span class="n">date1</span><span class="p">,</span><span class="w"> </span><span class="n">date2</span><span class="p">,</span><span class="w"> </span><span class="ss">:months</span><span class="p" data-group-id="2235840685-1">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">diff</span><span class="p" data-group-id="4761885403-1">(</span><span class="n">date1</span><span class="p">,</span><span class="w"> </span><span class="n">date2</span><span class="p">,</span><span class="w"> </span><span class="ss">:months</span><span class="p" data-group-id="4761885403-1">)</span><span class="w">
 </span><span class="o">-</span><span class="mi">1</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">diff</span><span class="p" data-group-id="2235840685-2">(</span><span class="n">date2</span><span class="p">,</span><span class="w"> </span><span class="n">date1</span><span class="p">,</span><span class="w"> </span><span class="ss">:months</span><span class="p" data-group-id="2235840685-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">diff</span><span class="p" data-group-id="4761885403-2">(</span><span class="n">date2</span><span class="p">,</span><span class="w"> </span><span class="n">date1</span><span class="p">,</span><span class="w"> </span><span class="ss">:months</span><span class="p" data-group-id="4761885403-2">)</span><span class="w">
 </span><span class="mi">1</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="kn">use</span><span class="w"> </span><span class="nc">Timex</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="n">date1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ld">~D[2015-01-31]</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="n">date2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ld">~D[2015-02-28]</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">diff</span><span class="p" data-group-id="2235840685-3">(</span><span class="n">date1</span><span class="p">,</span><span class="w"> </span><span class="n">date2</span><span class="p">,</span><span class="w"> </span><span class="ss">:months</span><span class="p" data-group-id="2235840685-3">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">diff</span><span class="p" data-group-id="4761885403-3">(</span><span class="n">date1</span><span class="p">,</span><span class="w"> </span><span class="n">date2</span><span class="p">,</span><span class="w"> </span><span class="ss">:months</span><span class="p" data-group-id="4761885403-3">)</span><span class="w">
 </span><span class="o">-</span><span class="mi">1</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">diff</span><span class="p" data-group-id="2235840685-4">(</span><span class="n">date2</span><span class="p">,</span><span class="w"> </span><span class="n">date1</span><span class="p">,</span><span class="w"> </span><span class="ss">:months</span><span class="p" data-group-id="2235840685-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">diff</span><span class="p" data-group-id="4761885403-4">(</span><span class="n">date2</span><span class="p">,</span><span class="w"> </span><span class="n">date1</span><span class="p">,</span><span class="w"> </span><span class="ss">:months</span><span class="p" data-group-id="4761885403-4">)</span><span class="w">
 </span><span class="mi">0</span></code></pre>
   </section>
 </div>
@@ -439,7 +439,7 @@ behavior mirrors <a href="Timex.html#shift/2"><code class="inline">Timex.shift/2
   </div>
 </section>
 </div>
-  <script src="dist/html-4f6aa19597cd1982c84e.js"></script>
+  <script src="dist/html-31a11ba8d67816a5bb76.js"></script>
   
   </body>
 </html>

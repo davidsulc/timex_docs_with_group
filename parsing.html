@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.19.1">
     <title>Parsing – timex v3.4.1</title>
-    <link rel="stylesheet" href="dist/html-4f6aa19597cd1982c84e.css" />
-    <script src="dist/sidebar_items-b670025c07.js"></script>
+    <link rel="stylesheet" href="dist/html-31a11ba8d67816a5bb76.css" />
+    <script src="dist/sidebar_items-cd5b3d0b77.js"></script>
     
   </head>
   <body data-type="extras">
@@ -66,21 +66,21 @@ timex      </h1>
 
 <p>Parsing a DateTime from an input string is very similar to formatting them, and is quite simple:</p>
 <pre><code class="nohighlight makeup elixir"><span class="c1"># Simple date format, default parser</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="6173701853-1">(</span><span class="s">&quot;2013-03-05&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;{YYYY}-{0M}-{0D}&quot;</span><span class="p" data-group-id="6173701853-1">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="5125552784-1">(</span><span class="s">&quot;2013-03-05&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;{YYYY}-{0M}-{0D}&quot;</span><span class="p" data-group-id="5125552784-1">)</span><span class="w">
 
 </span><span class="c1"># Simple date format, strftime parser</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="6173701853-2">(</span><span class="s">&quot;2013-03-05&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%Y-%m-%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:strftime</span><span class="p" data-group-id="6173701853-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="5125552784-2">(</span><span class="s">&quot;2013-03-05&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%Y-%m-%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:strftime</span><span class="p" data-group-id="5125552784-2">)</span><span class="w">
 
 </span><span class="c1"># Parse a date using the default parser and the shortcut directive for RFC 1123</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">parse!</span><span class="p" data-group-id="6173701853-3">(</span><span class="s">&quot;Tue, 05 Mar 2013 23:25:19 Z&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;{RFC1123z}&quot;</span><span class="p" data-group-id="6173701853-3">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">parse!</span><span class="p" data-group-id="5125552784-3">(</span><span class="s">&quot;Tue, 05 Mar 2013 23:25:19 Z&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;{RFC1123z}&quot;</span><span class="p" data-group-id="5125552784-3">)</span><span class="w">
 </span><span class="c1">#&lt;DateTime(2013-03-05T23:25:19Z Etc/UTC)&gt;</span><span class="w">
 
 </span><span class="c1"># Or you can use the :strftime parser (note how without timezone information, a NaiveDateTime is returned)</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">parse!</span><span class="p" data-group-id="6173701853-4">(</span><span class="s">&quot;2013-03-05&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%Y-%m-%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:strftime</span><span class="p" data-group-id="6173701853-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">parse!</span><span class="p" data-group-id="5125552784-4">(</span><span class="s">&quot;2013-03-05&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%Y-%m-%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:strftime</span><span class="p" data-group-id="5125552784-4">)</span><span class="w">
 </span><span class="ld">~N[2013-03-05T00:00:00]</span><span class="w">
 
 </span><span class="c1"># Any preformatted directive ending in `z` will shift the date to UTC/Zulu</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="6173701853-5">(</span><span class="s">&quot;Tue, 06 Mar 2013 01:25:19 +0200&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;{RFC1123}&quot;</span><span class="p" data-group-id="6173701853-5">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Timex</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="5125552784-5">(</span><span class="s">&quot;Tue, 06 Mar 2013 01:25:19 +0200&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;{RFC1123}&quot;</span><span class="p" data-group-id="5125552784-5">)</span><span class="w">
 </span><span class="err">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="c1">#&lt;DateTime(2013-03-05T23:25:19Z Etc/UTC)&gt;}</span></code></pre>
 <p>,You can also use “bang” versions (i.e. <code class="inline">parse!</code>), which will raise on failure rather than returning an <code class="inline">{:error, reason}</code> tuple (<code class="inline">parse!/1</code> and <code class="inline">parse!/2</code> respectively).</p>
       <footer class="footer">
@@ -99,7 +99,7 @@ timex      </h1>
   </div>
 </section>
 </div>
-  <script src="dist/html-4f6aa19597cd1982c84e.js"></script>
+  <script src="dist/html-31a11ba8d67816a5bb76.js"></script>
   
   </body>
 </html>
